@@ -10,31 +10,34 @@ export default function Home() {
   return (
     <>
       <PageMeta
-        title="React.js Ecommerce Dashboard | TailAdmin - React.js Admin Dashboard Template"
-        description="This is React.js Ecommerce Dashboard page for TailAdmin - React.js Tailwind CSS Admin Dashboard Template"
+        title="Ecommerce Dashboard | Admin Panel"
+        description="Comprehensive ecommerce store monitoring and analytics."
       />
-      <div className="grid grid-cols-12 gap-4 md:gap-6">
-        <div className="col-span-12 space-y-6 xl:col-span-7">
-          <EcommerceMetrics />
 
+      <div className="grid grid-cols-12 gap-4 md:gap-6 2xl:gap-7.5">
+        {/* --- Top Row: Key Performance Indicators --- */}
+        <div className="col-span-12">
+          <EcommerceMetrics />
+        </div>
+
+        {/* --- Middle Row: Sales & Targets --- */}
+        <div className="col-span-12 8">
           <MonthlySalesChart />
         </div>
 
-        <div className="col-span-12 xl:col-span-5">
-          <MonthlyTarget />
-        </div>
+        
 
+        {/* --- Middle Row: Long-term Trends --- */}
         <div className="col-span-12">
           <StatisticsChart />
         </div>
 
-        <div className="col-span-12 xl:col-span-5">
-          <DemographicCard />
-        </div>
-
-        <div className="col-span-12 xl:col-span-7">
+        {/* --- Bottom Row: Logistics & Customers --- */}
+        <div className="col-span-12">
           <RecentOrders />
         </div>
+
+        
       </div>
     </>
   );

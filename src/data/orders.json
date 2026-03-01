@@ -1,0 +1,54 @@
+[
+  {
+    "orderId": "#ORD-7721",
+    "customer": {
+      "name": "Alex Johnson",
+      "avatar": "https://i.pravatar.cc/150?u=alex",
+      "email": "alex.j@example.com"
+    },
+    "product": "Ultra-Light Running Shoes",
+    "amount": 129.99,
+    "date": "2024-03-01",
+    "status": "Delivered",
+    "payment": "Paid"
+  },
+  {
+    "orderId": "#ORD-7722",
+    "customer": {
+      "name": "Sarah Williams",
+      "avatar": "https://i.pravatar.cc/150?u=sarah",
+      "email": "s.williams@example.com"
+    },
+    "product": "Smart Noise-Cancelling Headphones",
+    "amount": 299.00,
+    "date": "2024-03-02",
+    "status": "Pending",
+    "payment": "Processing"
+  },
+  {
+    "orderId": "#ORD-7723",
+    "customer": {
+      "name": "Michael Chen",
+      "avatar": "https://i.pravatar.cc/150?u=michael",
+      "email": "m.chen@example.com"
+    },
+    "product": "Mechanical Gaming Keyboard",
+    "amount": 89.99,
+    "date": "2024-03-02",
+    "status": "Cancelled",
+    "payment": "Refunded"
+  },
+  {
+    "orderId": "#ORD-7724",
+    "customer": {
+      "name": "Emma Davis",
+      "avatar": "https://i.pravatar.cc/150?u=emma",
+      "email": "emma.d@example.com"
+    },
+    "product": "Minimalist Leather Wallet",
+    "amount": 45.50,
+    "date": "2024-03-03",
+    "status": "Shipped",
+    "payment": "Paid"
+  }
+]

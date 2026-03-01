@@ -1,0 +1,42 @@
+[
+  {
+    "id": "PROD-001",
+    "name": "Ultra-Light Running Shoes",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "price": 129.99,
+    "category": "Footwear",
+    "stock": 45,
+    "status": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "id": "PROD-002",
+    "name": "Smart Noise-Cancelling Headphones",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    "price": 299.00,
+    "category": "Electronics",
+    "stock": 8,
+    "status": "Low Stock",
+    "rating": 4.9
+  },
+  {
+    "id": "PROD-003",
+    "name": "Minimalist Leather Wallet",
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93",
+    "price": 45.50,
+    "category": "Accessories",
+    "stock": 0,
+    "status": "Out of Stock",
+    "rating": 4.5
+  },
+  {
+    "id": "PROD-004",
+    "name": "Mechanical Gaming Keyboard",
+    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae",
+    "price": 89.99,
+    "category": "Electronics",
+    "stock": 120,
+    "status": "In Stock",
+    "rating": 4.7
+  }
+]
