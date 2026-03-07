@@ -305,8 +305,8 @@ const AppSidebar: React.FC = () => {
                 </div>
 
                 {/* Brand Text: 'Online' changes to white, 'Shop' stays Brand Color */}
-                <div>
-                  <span className="text-xl font-bold tracking-tight text-gray-800 dark:text-white transition-colors duration-200">
+                <div className="text-gray-800 dark:text-white">
+                  <span className="text-xl font-bold tracking-tight  transition-colors duration-200">
                     Online Shop  <br/>
                    </span>
                   <span className="text-md font-light">Admin dashboard</span>
