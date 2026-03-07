@@ -106,7 +106,7 @@ export default function Products() {
       </div>
 
       {/* FILTER & SEARCH */}
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-4 rounded-sm border border-gray-500 bg-white p-4 shadow-default dark:border-white/[0.03]  dark:bg-transparent">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-4 rounded-sm border border-gray-200 bg-white p-4 shadow-default dark:border-white/[0.03]  dark:bg-transparent">
         <div className="relative">
           <span className="absolute -translate-y-1/2 pointer-events-none left-4 top-1/2">
             <svg
@@ -128,15 +128,15 @@ export default function Products() {
           <input
             type="text"
             placeholder="Search product name..."
-            className="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-200 bg-transparent py-2.5 pl-12 pr-14 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-800  dark:bg-white/[0.03] dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800 xl:w-[430px]"
+            className="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-200 bg-transparent py-2.5 pl-12 pr-14 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-800  dark:bg-white/[0.03] dark:text-gray-200/90 dark:placeholder:text-gray-200/30 dark:focus:border-brand-800 xl:w-[430px]"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
 
           <select 
-            // className="rounded border border-gray-500 bg-transparent px-4 py-2 outline-none dark:border-gray-800 text-black dark:text-gray-500"
-            className=" rounded-lg border border-gray-200 bg-transparent py-2.5 px-6 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-800  dark:bg-white/[0.03] dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800 xl:w-[430px]"
+            // className="rounded border border-gray-200 bg-transparent px-4 py-2 outline-none dark:border-gray-800 text-black dark:text-gray-500"
+            className=" rounded-lg border border-gray-200 bg-transparent py-2.5 px-6 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-800  dark:bg-white/[0.03] dark:text-gray-200/90 dark:placeholder:text-gray-200/30 dark:focus:border-brand-800 xl:w-[430px]"
             
             value={filterCategory}
             onChange={(e) => setFilterCategory(e.target.value)}
@@ -149,7 +149,7 @@ export default function Products() {
       </div>
 
       {/* TABLE */}
-      <div className="rounded-sm border border-gray-500 bg-white shadow-default dark:border-gray-800 dark:bg-white/[0.03] dark:border-white/[0.03] ">
+      <div className="rounded-sm border border-gray-200 bg-white shadow-default dark:border-gray-800 dark:bg-white/[0.03] dark:border-white/[0.03] ">
         <table className="w-full table-auto">
           <thead>
             <tr className="bg-gray-2 text-left dark:bg-white/[0.03]">
@@ -161,15 +161,15 @@ export default function Products() {
           </thead>
           <tbody>
             {filteredProducts.map((product) => (
-              <tr key={product.id} className="border-b border-gray-500 dark:border-white/[0.03] ">
+              <tr key={product.id} className="border-b border-gray-200 dark:border-white/[0.03] ">
                 <td className="px-4 py-5 xl:pl-11">
                   <div className="flex items-center gap-3">
                     <img src={product.image} className="h-12 w-12 rounded-md object-cover" alt="" />
-                    <p className="font-medium text-black dark:text-white">{product.name}</p>
+                    <p className="font-medium text-black dark:text-gray-200">{product.name}</p>
                   </div>
                 </td>
                 <td className="px-4 py-5 text-black dark:text-gray-400">{product.category}</td>
-                <td className="px-4 py-5 text-black dark:text-white">${product.price}</td>
+                <td className="px-4 py-5 text-black dark:text-gray-200">${product.price}</td>
                 <td className="px-4 py-5">
                   <div className="flex items-center justify-center space-x-3.5 dark:text-gray-300">
                     <button onClick={() => handleOpenEdit(product)} className="hover:text-brand-500"><PencilIcon className="h-5 w-5" /></button>
@@ -196,7 +196,7 @@ export default function Products() {
             <label className="block mb-2 text-sm font-medium">Product Name</label>
             <input 
               type="text" placeholder="product name" required value={formData.name}
-              className="w-full rounded border border-gray-500 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
+              className="w-full rounded border border-gray-200 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
               onChange={(e) => setFormData({...formData, name: e.target.value})}
             />
           </div>
@@ -204,20 +204,20 @@ export default function Products() {
             <label className="block mb-2 text-sm font-medium">Description</label>
             <input 
               type="text" placeholder="Description" required value={formData.name}
-              className="w-full rounded border border-gray-500 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
+              className="w-full rounded border border-gray-200 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
               onChange={(e) => setFormData({...formData, name: e.target.value})}
             />
           </div>
           <div className="grid grid-cols-2 gap-4">
             <input 
               type="number" placeholder="Price" value={formData.price}
-                            className="w-full rounded border border-gray-500 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
+                            className="w-full rounded border border-gray-200 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
 
               onChange={(e) => setFormData({...formData, price: e.target.value})}
             />
             <input 
               type="number" placeholder="Stock" value={formData.stock}
-                            className="w-full rounded border border-gray-500 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
+                            className="w-full rounded border border-gray-200 p-3 outline-none focus:border-brand-500 dark:border-gray-800 dark:bg-white/[0.03]"
 
               onChange={(e) => setFormData({...formData, stock: e.target.value})}
             />

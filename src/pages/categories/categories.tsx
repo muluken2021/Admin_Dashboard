@@ -94,22 +94,22 @@ export default function Categories() {
           onClick={handleOpenAdd}
           className="flex items-center gap-2 rounded bg-brand-500 px-5 py-2.5 font-medium text-white hover:bg-opacity-90"
         >
-          <plus  className="h-5 w-5" />
+          {/* <plus  className="h-5 w-5" /> */}
           Add Category
         </button>
       </div>
 
       {/* FILTER BAR */}
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-4 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-4 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-white/[0.03] dark:bg-white/[0.03]">
         <input
           type="text"
           placeholder="Search categories..."
-          className="w-full max-w-xs rounded border border-stroke bg-gray py-2 px-4 outline-none focus:border-brand-500 dark:border-strokedark dark:bg-meta-4 text-black dark:text-white"
+          className="w-full max-w-xs rounded border border-stroke bg-gray py-2 px-4 outline-none focus:border-brand-500 dark:border-white/[0.03] dark:bg-meta-4 text-black dark:text-white"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <select 
-          className="rounded border border-stroke bg-transparent px-4 py-2 outline-none dark:border-strokedark text-black dark:text-white"
+          className="rounded border border-stroke bg-transparent px-4 py-2 outline-none dark:border-white/[0.03] text-black dark:text-white"
           value={filterStatus}
           onChange={(e) => setFilterStatus(e.target.value)}
         >
@@ -119,7 +119,7 @@ export default function Categories() {
         </select>
       </div>
 
-      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-white/[0.03] dark:bg-white/[0.03]">
         <div className="max-w-full overflow-x-auto">
           <table className="w-full table-auto">
             <thead>
@@ -132,30 +132,30 @@ export default function Categories() {
             </thead>
             <tbody>
               {filteredCategories.map((category) => (
-                <tr key={category.id} className="border-b border-stroke dark:border-strokedark">
+                <tr key={category.id} className="border-b border-stroke dark:border-white/[0.03]">
                   <td className="px-4 py-5 xl:pl-11">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-500/10 text-brand-500">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600/10 text-brand-500">
                         <TaskIcon className="h-5 w-5" />
                       </div>
-                      <div>
+                      <div >
                         <p className="font-medium text-black dark:text-white">{category.name}</p>
-                        <span className={`text-xs ${category.status === 'Active' ? 'text-success' : 'text-danger'}`}>
+                        <span className={`text-xs text-black dark:text-gray-400 ${category.status === 'Active' ? 'text-success' : 'text-danger'}`}>
                           {category.status}
                         </span>
                       </div>
                     </div>
                   </td>
                   <td className="px-4 py-5">
-                    <code className="rounded bg-gray-2 px-2 py-1 text-xs dark:bg-meta-4 text-black dark:text-white">
+                    <code className="rounded bg-gray-2 px-2 py-1 text-xs dark:bg-meta-4 text-black dark:text-gray-400">
                       /{category.slug}
                     </code>
                   </td>
-                  <td className="px-4 py-5 text-black dark:text-white">
+                  <td className="px-4 py-5 text-black dark:text-gray-400">
                     {category.productCount} items
                   </td>
                   <td className="px-4 py-5">
-                    <div className="flex justify-end gap-3">
+                    <div className=" text-black dark:text-gray-400 flex justify-end gap-3">
                       <button onClick={() => handleOpenEdit(category)} className="hover:text-brand-500 transition">
                         <PencilIcon className="h-5 w-5" />
                       </button>
@@ -183,7 +183,7 @@ export default function Categories() {
               type="text" required
               value={formData.name}
               onChange={(e) => setFormData({...formData, name: e.target.value})}
-              className="w-full rounded-lg border border-stroke bg-transparent py-3 px-5 outline-none focus:border-brand-500 dark:border-strokedark"
+              className="w-full rounded-lg border border-stroke bg-transparent py-3 px-5 outline-none focus:border-brand-500 dark:border-white/[0.03]"
               placeholder="e.g. Electronics"
             />
           </div>
@@ -192,7 +192,7 @@ export default function Categories() {
             <select 
               value={formData.status}
               onChange={(e) => setFormData({...formData, status: e.target.value})}
-              className="w-full rounded-lg border border-stroke bg-transparent py-3 px-5 outline-none focus:border-brand-500 dark:border-strokedark"
+              className="w-full rounded-lg border border-stroke bg-transparent py-3 px-5 outline-none focus:border-brand-500 dark:border-white/[0.03]"
             >
               <option value="Active">Active</option>
               <option value="Inactive">Inactive</option>

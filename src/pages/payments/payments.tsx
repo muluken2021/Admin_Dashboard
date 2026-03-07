@@ -52,32 +52,31 @@ export default function Payments() {
 
   return (
     <>
-      <PageMeta title="Payments | Admin Dashboard" />
 
       <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h2 className="text-title-md2 font-bold text-black dark:text-white">
+          <h2 className="text-title-md2 font-bold text-black dark:text-gray-400">
             Transactions ({filteredTransactions.length})
           </h2>
-          <p className="text-sm font-medium text-body">Monitor and manage store payments</p>
+          <p className="text-sm font-medium text-body text-black dark:text-gray-400">Monitor and manage store payments</p>
         </div>
-        <button className="flex items-center gap-2 rounded bg-primary px-5 py-2.5 font-medium text-white hover:bg-opacity-90 transition">
+        <button className="bg-brand-600 text-gray-200 flex items-center gap-2 rounded bg-primary px-5 py-2.5 font-medium  hover:bg-opacity-90 transition">
           <ArrowDownIcon className="h-5 w-5 rotate-180" />
           Export Statement
         </button>
       </div>
 
       {/* SEARCH & FILTER BAR */}
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-4 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-4 rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-white/[0.03] dark:bg-white/[0.03]">
         <input
           type="text"
           placeholder="Search ID or Customer..."
-          className="w-full max-w-md rounded border border-stroke bg-gray py-2 px-4 outline-none focus:border-primary dark:border-strokedark dark:bg-meta-4 text-black dark:text-white"
+          className="w-full max-w-md rounded border border-stroke bg-gray py-2 px-4 outline-none focus:border-primary dark:border-white/[0.03] dark:bg-meta-4 text-black dark:text-gray-400"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <select 
-          className="rounded border border-stroke bg-transparent px-4 py-2 outline-none dark:border-strokedark text-black dark:text-white"
+          className="rounded border border-stroke bg-transparent px-4 py-2 outline-none dark:border-white/[0.03] text-black dark:text-gray-400"
           value={filterStatus}
           onChange={(e) => setFilterStatus(e.target.value)}
         >
@@ -89,38 +88,38 @@ export default function Payments() {
         </select>
       </div>
 
-      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-white/[0.03] dark:bg-white/[0.03]">
         <div className="max-w-full overflow-x-auto">
           <table className="w-full table-auto">
             <thead>
               <tr className="bg-gray-2 text-left dark:bg-meta-4">
-                <th className="px-4 py-4 font-medium text-black dark:text-white">Transaction ID</th>
-                <th className="px-4 py-4 font-medium text-black dark:text-white">Customer</th>
-                <th className="px-4 py-4 font-medium text-black dark:text-white">Method/Date</th>
-                <th className="px-4 py-4 font-medium text-black dark:text-white">Amount</th>
-                <th className="px-4 py-4 font-medium text-black dark:text-white">Status</th>
-                <th className="px-4 py-4 font-medium text-black dark:text-white text-right">Actions</th>
+                <th className="px-4 py-4 font-medium text-black dark:text-gray-200">Transaction ID</th>
+                <th className="px-4 py-4 font-medium text-black dark:text-gray-200">Customer</th>
+                <th className="px-4 py-4 font-medium text-black dark:text-gray-200">Method/Date</th>
+                <th className="px-4 py-4 font-medium text-black dark:text-gray-200">Amount</th>
+                <th className="px-4 py-4 font-medium text-black dark:text-gray-200">Status</th>
+                <th className="px-4 py-4 font-medium text-black dark:text-gray-200 text-right">Actions</th>
               </tr>
             </thead>
             <tbody>
               {filteredTransactions.map((trx) => (
-                <tr key={trx.id} className="border-b border-stroke dark:border-strokedark hover:bg-gray-1 dark:hover:bg-white/5 transition-colors">
-                  <td className="px-4 py-5 font-medium text-black dark:text-white">{trx.id}</td>
-                  <td className="px-4 py-5 text-black dark:text-white">{trx.customer}</td>
+                <tr key={trx.id} className="border-b border-stroke dark:border-white/[0.03] hover:bg-gray-1  transition-colors">
+                  <td className="px-4 py-5 font-medium text-black dark:text-gray-400">{trx.id}</td>
+                  <td className="px-4 py-5 text-black dark:text-gray-400">{trx.customer}</td>
                   <td className="px-4 py-5">
-                    <p className="text-sm text-black dark:text-white">{trx.method}</p>
-                    <p className="text-xs text-body">{trx.date}</p>
+                    <p className="text-sm text-black dark:text-gray-400">{trx.method}</p>
+                    <p className="text-xs text-black dark:text-gray-500 text-body">{trx.date}</p>
                   </td>
-                  <td className="px-4 py-5 font-bold text-black dark:text-white">
+                  <td className="px-4 py-5 font-bold text-black dark:text-gray-400">
                     ${trx.amount.toFixed(2)}
                   </td>
                   <td className="px-4 py-5">
-                    <span className={`inline-flex rounded-full px-3 py-1 text-xs font-medium ${getStatusBadge(trx.status)}`}>
+                    <span className={`inline-flex text-black dark:text-gray-400 rounded-full px-3 py-1 text-xs font-medium ${getStatusBadge(trx.status)}`}>
                       {trx.status}
                     </span>
                   </td>
                   <td className="px-4 py-5 text-right">
-                    <div className="flex justify-end items-center gap-3">
+                    <div className="text-black dark:text-gray-400 flex justify-end items-center gap-3">
                       {trx.status === "Succeeded" && (
                         <button 
                           onClick={() => handleRefund(trx.id)}

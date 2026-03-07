@@ -58,7 +58,7 @@ export default function Orders() {
         <h2 className="text-title-md2 font-bold text-black dark:text-gray-300">
           Manage Orders ({filteredOrders.length})
         </h2>
-        <button className="flex items-center gap-2 rounded border border-stroke bg-white px-4 py-2 font-medium text-black hover:shadow-1 dark:border-white/[0.03] dark:bg-meta-4 dark:text-gray-300">
+        <button className="text-gray-200 flex items-center gap-2 rounded border border-stroke bg-brand-600 px-4 py-2 font-medium  hover:shadow-1 dark:border-white/[0.03]">
           <ArrowDownIcon className="h-5 w-5" />
           Export CSV
         </button>
@@ -168,7 +168,7 @@ export default function Orders() {
                     onClick={() => updateOrderStatus(selectedOrder.orderId, s)}
                     className={`rounded px-3 py-1 text-xs font-medium border transition ${
                       selectedOrder.status === s 
-                      ? "bg-primary border-primary text-white" 
+                      ? "bg-primary border-primary text-gray-200" 
                       : "border-stroke hover:border-primary dark:border-white/[0.03]"
                     }`}
                   >
