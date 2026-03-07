@@ -68,13 +68,14 @@ export default function Products() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const productPayload = {
-      name: formData.name,
-      price: parseFloat(formData.price),
-      category: formData.category,
-      stock: parseInt(formData.stock),
-      image: formData.image,
-      status: parseInt(formData.stock) > 0 ? "In Stock" : "Out of Stock"
-    };
+        name: formData.name,
+        price: parseFloat(formData.price),
+        category: formData.category,
+        stock: parseInt(formData.stock),
+        image: formData.image,
+        status: parseInt(formData.stock) > 0 ? "In Stock" : "Out of Stock",
+        rating: 4.5
+      };
 
     if (editingProduct) {
       // EDIT
