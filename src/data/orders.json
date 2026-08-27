@@ -1,54 +1,132 @@
 [
   {
-    "orderId": "#ORD-7721",
+    "orderId": "#ORD-7731",
     "customer": {
-      "name": "Alex Johnson",
-      "avatar": "https://i.pravatar.cc/150?u=alex",
-      "email": "alex.j@example.com"
+      "name": "James Mitchell",
+      "avatar": "https://ui-avatars.com/api/?name=James+Mitchell&background=0B4E4E&color=fff",
+      "email": "j.mitchell@example.com"
     },
-    "product": "Ultra-Light Running Shoes",
-    "amount": 129.99,
-    "date": "2024-03-01",
+    "product": "MacBook Pro 16\" M3 Pro",
+    "amount": 3499.00,
+    "date": "Aug 27, 2026",
     "status": "Delivered",
     "payment": "Paid"
   },
   {
-    "orderId": "#ORD-7722",
+    "orderId": "#ORD-7732",
     "customer": {
-      "name": "Sarah Williams",
-      "avatar": "https://i.pravatar.cc/150?u=sarah",
-      "email": "s.williams@example.com"
+      "name": "Sophia Turner",
+      "avatar": "https://ui-avatars.com/api/?name=Sophia+Turner&background=14a3a3&color=fff",
+      "email": "sophia.t@example.com"
     },
-    "product": "Smart Noise-Cancelling Headphones",
-    "amount": 299.00,
-    "date": "2024-03-02",
+    "product": "Sony WH-1000XM5 Headphones",
+    "amount": 379.99,
+    "date": "Aug 26, 2026",
+    "status": "Shipped",
+    "payment": "Paid"
+  },
+  {
+    "orderId": "#ORD-7733",
+    "customer": {
+      "name": "Liam Anderson",
+      "avatar": "https://ui-avatars.com/api/?name=Liam+Anderson&background=7c3aed&color=fff",
+      "email": "liam.a@example.com"
+    },
+    "product": "iPhone 15 Pro Max 256GB",
+    "amount": 1199.00,
+    "date": "Aug 26, 2026",
     "status": "Pending",
     "payment": "Processing"
   },
   {
-    "orderId": "#ORD-7723",
+    "orderId": "#ORD-7734",
     "customer": {
-      "name": "Michael Chen",
-      "avatar": "https://i.pravatar.cc/150?u=michael",
-      "email": "m.chen@example.com"
+      "name": "Emily Clarke",
+      "avatar": "https://ui-avatars.com/api/?name=Emily+Clarke&background=f97316&color=fff",
+      "email": "emily.c@example.com"
     },
-    "product": "Mechanical Gaming Keyboard",
-    "amount": 89.99,
-    "date": "2024-03-02",
+    "product": "Samsung 65\" 4K OLED S95C",
+    "amount": 1849.00,
+    "date": "Aug 25, 2026",
+    "status": "Delivered",
+    "payment": "Paid"
+  },
+  {
+    "orderId": "#ORD-7735",
+    "customer": {
+      "name": "Noah Williams",
+      "avatar": "https://ui-avatars.com/api/?name=Noah+Williams&background=dc2626&color=fff",
+      "email": "n.williams@example.com"
+    },
+    "product": "Logitech MX Master 3S",
+    "amount": 99.99,
+    "date": "Aug 25, 2026",
     "status": "Cancelled",
     "payment": "Refunded"
   },
   {
-    "orderId": "#ORD-7724",
+    "orderId": "#ORD-7736",
     "customer": {
-      "name": "Emma Davis",
-      "avatar": "https://i.pravatar.cc/150?u=emma",
-      "email": "emma.d@example.com"
+      "name": "Ava Johnson",
+      "avatar": "https://ui-avatars.com/api/?name=Ava+Johnson&background=0891b2&color=fff",
+      "email": "ava.j@example.com"
     },
-    "product": "Minimalist Leather Wallet",
-    "amount": 45.50,
-    "date": "2024-03-03",
+    "product": "iPad Pro 12.9\" M2 WiFi 256GB",
+    "amount": 1099.00,
+    "date": "Aug 24, 2026",
+    "status": "Delivered",
+    "payment": "Paid"
+  },
+  {
+    "orderId": "#ORD-7737",
+    "customer": {
+      "name": "Ethan Brown",
+      "avatar": "https://ui-avatars.com/api/?name=Ethan+Brown&background=059669&color=fff",
+      "email": "ethan.b@example.com"
+    },
+    "product": "Canon EOS R6 Mark II Body",
+    "amount": 2499.00,
+    "date": "Aug 24, 2026",
     "status": "Shipped",
+    "payment": "Paid"
+  },
+  {
+    "orderId": "#ORD-7738",
+    "customer": {
+      "name": "Isabella Davis",
+      "avatar": "https://ui-avatars.com/api/?name=Isabella+Davis&background=d97706&color=fff",
+      "email": "i.davis@example.com"
+    },
+    "product": "Dyson V15 Detect Absolute",
+    "amount": 749.99,
+    "date": "Aug 23, 2026",
+    "status": "Delivered",
+    "payment": "Paid"
+  },
+  {
+    "orderId": "#ORD-7739",
+    "customer": {
+      "name": "Oliver Martinez",
+      "avatar": "https://ui-avatars.com/api/?name=Oliver+Martinez&background=7c3aed&color=fff",
+      "email": "o.martinez@example.com"
+    },
+    "product": "Nintendo Switch OLED Bundle",
+    "amount": 349.99,
+    "date": "Aug 22, 2026",
+    "status": "Pending",
+    "payment": "Processing"
+  },
+  {
+    "orderId": "#ORD-7740",
+    "customer": {
+      "name": "Charlotte Wilson",
+      "avatar": "https://ui-avatars.com/api/?name=Charlotte+Wilson&background=be185d&color=fff",
+      "email": "c.wilson@example.com"
+    },
+    "product": "Dell XPS 15 9530 Laptop",
+    "amount": 2199.00,
+    "date": "Aug 21, 2026",
+    "status": "Delivered",
     "payment": "Paid"
   }
 ]

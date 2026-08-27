@@ -2,40 +2,54 @@ import EcommerceMetrics from "../../components/ecommerce/EcommerceMetrics";
 import MonthlySalesChart from "../../components/ecommerce/MonthlySalesChart";
 import StatisticsChart from "../../components/ecommerce/StatisticsChart";
 import RecentOrders from "../../components/ecommerce/RecentOrders";
+import MonthlyTarget from "../../components/ecommerce/MonthlyTarget";
+import DemographicCard from "../../components/ecommerce/DemographicCard";
 import PageMeta from "../../components/common/PageMeta";
 
 export default function Home() {
   return (
     <>
       <PageMeta
-        title="Ecommerce Dashboard | Admin Panel"
+        title="Dashboard | Ecommerce Admin"
         description="Comprehensive ecommerce store monitoring and analytics."
       />
 
-      <div className="grid grid-cols-12 gap-4 md:gap-6 2xl:gap-7.5">
-        {/* --- Top Row: Key Performance Indicators --- */}
-        <div className="col-span-12">
-          <EcommerceMetrics />
+      <div className="space-y-6">
+        {/* Page Header */}
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+            Dashboard
+          </h1>
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            Welcome back — here's what's happening with your store today.
+          </p>
         </div>
 
-        {/* --- Middle Row: Sales & Targets --- */}
-        <div className="col-span-12 8">
-          <MonthlySalesChart />
+        {/* KPI Metrics */}
+        <EcommerceMetrics />
+
+        {/* Charts Row */}
+        <div className="grid grid-cols-12 gap-6">
+          <div className="col-span-12 xl:col-span-8">
+            <MonthlySalesChart />
+          </div>
+          <div className="col-span-12 xl:col-span-4">
+            <MonthlyTarget />
+          </div>
         </div>
 
-        
+        {/* Sales Trend */}
+        <StatisticsChart />
 
-        {/* --- Middle Row: Long-term Trends --- */}
-        <div className="col-span-12">
-          <StatisticsChart />
+        {/* Bottom Row */}
+        <div className="grid grid-cols-12 gap-6">
+          <div className="col-span-12 xl:col-span-8">
+            <RecentOrders />
+          </div>
+          <div className="col-span-12 xl:col-span-4">
+            <DemographicCard />
+          </div>
         </div>
-
-        {/* --- Bottom Row: Logistics & Customers --- */}
-        <div className="col-span-12">
-          <RecentOrders />
-        </div>
-
-        
       </div>
     </>
   );

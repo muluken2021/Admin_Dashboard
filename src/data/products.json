@@ -1,42 +1,90 @@
 [
   {
     "id": "PROD-001",
-    "name": "Ultra-Light Running Shoes",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-    "price": 129.99,
-    "category": "Footwear",
-    "stock": 45,
+    "name": "MacBook Pro 16\" M3 Pro",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=80&h=80&fit=crop",
+    "price": 3499.00,
+    "category": "Computers",
+    "stock": 24,
     "status": "In Stock",
-    "rating": 4.8
+    "rating": 4.9,
+    "sku": "APL-MBP16-M3P"
   },
   {
     "id": "PROD-002",
-    "name": "Smart Noise-Cancelling Headphones",
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
-    "price": 299.00,
-    "category": "Electronics",
-    "stock": 8,
-    "status": "Low Stock",
-    "rating": 4.9
+    "name": "Sony WH-1000XM5 Headphones",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=80&h=80&fit=crop",
+    "price": 379.99,
+    "category": "Audio",
+    "stock": 67,
+    "status": "In Stock",
+    "rating": 4.8,
+    "sku": "SNY-WH1000XM5"
   },
   {
     "id": "PROD-003",
-    "name": "Minimalist Leather Wallet",
-    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93",
-    "price": 45.50,
-    "category": "Accessories",
-    "stock": 0,
-    "status": "Out of Stock",
-    "rating": 4.5
+    "name": "iPhone 15 Pro Max 256GB",
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=80&h=80&fit=crop",
+    "price": 1199.00,
+    "category": "Smartphones",
+    "stock": 5,
+    "status": "Low Stock",
+    "rating": 4.9,
+    "sku": "APL-IP15PM-256"
   },
   {
     "id": "PROD-004",
-    "name": "Mechanical Gaming Keyboard",
-    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae",
-    "price": 89.99,
-    "category": "Electronics",
-    "stock": 120,
+    "name": "Samsung 65\" OLED S95C",
+    "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829e1?w=80&h=80&fit=crop",
+    "price": 1849.00,
+    "category": "TVs",
+    "stock": 12,
     "status": "In Stock",
-    "rating": 4.7
+    "rating": 4.7,
+    "sku": "SAM-QE65S95C"
+  },
+  {
+    "id": "PROD-005",
+    "name": "Logitech MX Master 3S",
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=80&h=80&fit=crop",
+    "price": 99.99,
+    "category": "Accessories",
+    "stock": 0,
+    "status": "Out of Stock",
+    "rating": 4.6,
+    "sku": "LOG-MXMSTR3S"
+  },
+  {
+    "id": "PROD-006",
+    "name": "iPad Pro 12.9\" M2 WiFi",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=80&h=80&fit=crop",
+    "price": 1099.00,
+    "category": "Tablets",
+    "stock": 31,
+    "status": "In Stock",
+    "rating": 4.8,
+    "sku": "APL-IPDP129-M2"
+  },
+  {
+    "id": "PROD-007",
+    "name": "Canon EOS R6 Mark II",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=80&h=80&fit=crop",
+    "price": 2499.00,
+    "category": "Cameras",
+    "stock": 8,
+    "status": "Low Stock",
+    "rating": 4.9,
+    "sku": "CAN-EOSR6M2"
+  },
+  {
+    "id": "PROD-008",
+    "name": "Dyson V15 Detect Absolute",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=80&h=80&fit=crop",
+    "price": 749.99,
+    "category": "Home",
+    "stock": 19,
+    "status": "In Stock",
+    "rating": 4.7,
+    "sku": "DYS-V15-ABS"
   }
 ]
